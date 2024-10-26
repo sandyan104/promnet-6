@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>2309844 - SandyAN {% block title %}{% endblock %}</title>
+    {% load static %}
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
+	</head>
+	<body>
+		<div class="container">
+			<div class="header">
+				<img
+					src="https://firebasestorage.googleapis.com/v0/b/sp-dev-e0bd5.appspot.com/o/PROMNET%2F1_1.png?alt=media&token=6ece3ad2-0447-4cfa-b92b-4cbcdbd75e29"
+				/>
+				<h2 class="m0">Sandy Achmad Nugraha</h2>
+				<p class="subtitle">
+					Kab. Bandung, Jawa Barat |
+					<a class="link" href="https://wa.me/628999456350">+628999456350</a> |
+					<a class="link" href="mailto:sandyan@upi.edu">sandyan@upi.edu</a>
+				</p>
+			</div>
+
+			<nav class="navbar">
+				<ul class="navbar-nav">
+						<li class="{% if request.path == '/' %}active{% endif %}">
+								<a href="{% url 'home' %}">Tentang Saya</a>
+						</li>
+						•
+						<li class="{% if request.path == '/education/' %}active{% endif %}">
+								<a href="{% url 'education' %}">Pendidikan</a>
+						</li>
+						•
+						<li class="{% if request.path == '/experience/' %}active{% endif %}">
+								<a href="{% url 'experience' %}">Pengalaman</a>
+						</li>
+				</ul>
+			</nav>
+
+    {% block body %}
+    {% endblock %}
+
+	</body>
+</html>

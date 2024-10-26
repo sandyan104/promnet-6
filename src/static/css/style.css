@@ -1,0 +1,99 @@
+body {
+	margin: 0;
+	padding: 0;
+	background: url(https://firebasestorage.googleapis.com/v0/b/sp-dev-e0bd5.appspot.com/o/PROMNET%2F6-1.svg?alt=media&token=9422345f-8a47-44d2-9ec6-50da43d34239);
+	font-family: Georgia, serif;
+	color: #333;
+}
+
+img {
+	width: 100px;
+	border-radius: 100%;
+	margin-bottom: 20px;
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.container {
+	max-width: 700px;
+	min-height: calc(100vh - 100px);
+	margin: 0 auto;
+	padding: 50px;
+	background-color: #fff;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.header {
+	width: fit-content;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.m0 {
+	margin: 0;
+}
+
+.mt10 {
+	margin-top: 10px;
+}
+
+.mt20 {
+	margin-top: 20px;
+}
+.navbar {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-bottom: 1.5px solid #666;
+	margin-top: 30px;
+	padding-bottom: 10px;
+	font-size: 18px;
+}
+
+.navbar a {
+	color: #333;
+	text-decoration: none;
+}
+
+.navbar-nav {
+	list-style: none;
+	display: flex;
+	gap: 20px;
+	padding: 0;
+}
+
+.navbar-nav li a:hover {
+	color: #007bff;
+}
+
+.navbar-nav .active a {
+	font-weight: 600;
+	color: #007bff;
+}
+
+.mt30 {
+	margin-top: 20px;
+}
+
+.subtitle {
+	margin-top: 10px;
+	color: #666;
+}
+
+.link,
+.link a {
+	color: #0039e6;
+	text-decoration: none;
+}
+
+.data {
+	margin-top: 30px;
+}
+
+.data h3 {
+	padding-bottom: 15px;
+	border-bottom: 1.5px solid #666;
+}
